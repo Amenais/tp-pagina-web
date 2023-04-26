@@ -1,2 +1,128 @@
 @import url(./home.css);
 
+/* Contenido */
+
+main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-1 {
+    background-color: red;
+    width: 25%;
+}
+
+.div-2 {
+    width: 50%;
+    background-color: green;
+}
+
+.div-3 {
+    width: 25%;
+    background-color: blue;
+}
+
+aside {
+    height: auto;
+    width: auto;
+}
+
+/* Barra lateral Izquierda */
+
+.apartado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.apartado div {
+    height: auto;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.apartado div > div {
+    border: 1px solid;
+    width: fit-content;
+}
+
+
+/* Formulario */
+
+.contacto {
+    grid-column: span 2;
+    grid-row: auto;
+    margin: auto;
+    padding: 0;
+    width: 40vw;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.campos-datos {
+    display: grid;
+    width: 45%;
+    margin: 1%;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    padding-left: 1.35%;
+}
+
+label {
+    padding: 5px 0;
+    grid-column: span 1;
+    grid-row: span 4;
+}
+
+input {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-enviar, .btn-limpiar {
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    width: 45%;
+    display: inline-block;
+}
+
+.btn-enviar:hover, .btn-limpiar:hover {
+    opacity: calc(0.8);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.btn-enviar:not(:hover), .btn-limpiar:not(:hover) {
+    transition: 200ms;
+}
+
+.btn-enviar {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.btn-limpiar {
+    background-color: lightgrey;
+}
+
+footer {
+    grid-area: auto, auto;
+}
