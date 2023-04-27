@@ -33,7 +33,7 @@ li {
 
 /* Logo, barra de navegacion, menu */
 
-div header {
+.grid-container header {
   /* border: 1px solid chartreuse; */
   /* background: #a749e6;
   background-image: linear-gradient(
@@ -47,21 +47,35 @@ div header {
   grid-row: span 1;
   position: sticky;
   top: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
   height: 10vh;
   /* border-bottom: 3px solid rgba(159, 255, 242, 0.805); */
   border-radius: 0 0 2px 2px;
   z-index: 5;
 }
 
+.contenedor-logo {
+  grid-column: span 1;
+}
+
 h1 {
+  height: 10vh;
+  width: 10vw;
   display: flex;
 }
 
-h1 img {
-  margin: 10%;
-  height: auto;
-  display: block;
+h1 a {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 a img {
+  margin: auto;
+  border-radius: 50%;
+  width: 65px;
 }
 
 .navegador-inicio ul {
