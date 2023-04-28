@@ -140,6 +140,9 @@ main {
     rgba(158, 169, 237, 0.696) 75%,
     rgba(178, 218, 247, 0.485) 95%
   );
+  /* background-image: url('../media/img/background.jpeg');
+  background-size: cover;
+  background-attachment: local; */
 }
 
 /* Pie de pagina */

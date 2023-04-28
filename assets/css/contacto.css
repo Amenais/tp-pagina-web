@@ -15,41 +15,9 @@ main {
 }
 
 .div-2 {
-    width: 50%;
-    background-color: green;
+    width: 75%;
+    /* background-color: green; */
 }
-
-.div-3 {
-    width: 25%;
-    background-color: blue;
-}
-
-aside {
-    height: auto;
-    width: auto;
-}
-
-/* Barra lateral Izquierda */
-
-.apartado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: fit-content;
-}
-
-.apartado div {
-    height: auto;
-    padding: 10px;
-    margin: 20px 0;
-}
-
-.apartado div > div {
-    border: 1px solid;
-    width: fit-content;
-}
-
 
 /* Formulario */
 
@@ -64,6 +32,10 @@ aside {
     max-width: 800px;
 }
 
+.contacto h2 {
+    margin: 2%;
+}
+
 legend {
     margin-bottom: 10px;
     font-weight: 600;
@@ -74,7 +46,7 @@ legend {
     width: 45%;
     margin: 1%;
     grid-template-columns: 2;
-    grid-template-rows: 4;
+    grid-template-rows: 5;
     padding-left: 1.35%;
 }
 
@@ -84,14 +56,21 @@ label {
     grid-row: span 4;
 }
 
-input {
-    grid-column: span 2;
-    grid-row: span 4;
+label span {
+    color: red;
+    font-size: 18px;
+    margin: 2px;
+}
+
+textarea {
+    margin-top: 2%;
+    resize: none;
 }
 
 .botones {
     display: flex;
     justify-content: space-around;
+    margin: 2% 0;
 }
 
 .btn-enviar, .btn-limpiar {
