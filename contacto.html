@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -138,36 +138,115 @@
           </div>
         </div>
       </aside>
-      <div class="div-2">
-        <div class="contenido">
-          <section class="seccion contacto">
-            <h2>Contacto</h2>
-            <div id="contacto">
-              <form action="" method="post">
-                <fieldset class="campos-datos">
-                  <legend>Ingrese sus datos</legend>
-                  <label for="nombre">Nombre<span>*</span></label>
-                  <input id="nombre" type="text" required placeholder="Ingrese su nombre" minlength="2"
-                    title="Nombre" />
-                  <label for="apellido">Apellido<span>*</span></label>
-                  <input id="apellido" type="text" required placeholder="Ingrese su apellido" minlength="2"
-                    title="Apellido" />
-                  <label for="email">Email<span>*</span></label>
-                  <input id="email" type="email" required placeholder="info@mail.com" title="Email" />
-                  <label for="telefono">Telefono<span>*</span></label>
-                  <input id="telefono" type="tel" required placeholder="54 11 1234 5678" title="Telefono"
-                    maxlength="12" />
-                  <label for="comentarios">Comentarios (hasta 200 caracteres)<br>
-                    <textarea name="comentarios" id="comentarios" cols="50" rows="10" maxlength="200"  placeholder="Escriba sus comentarios aquí..."></textarea>
+      <div class="contenido">
+        <section class="seccion">
+          <div class="contacto">
+            <article class="info">
+              <h2>Contáctenos</h2>
+              <p>"Datos dirección" Ej.: Calle Falsa 123, Springfield</p>
+              <p>"Datos horarios" Ej.: Lunes a Viernes de 8 a 18 hs</p>
+              <p>"Datos horarios" Ej.: Sábados de 10 a 14 hs</p>
+              <a href="">infocontacto@ejemplo.com</a>
+              <ul>
+                <li><a title="Ir a Facebook" target="_blank" href="https://www.facebook.com/"><img
+                      src="./assets/media/img/social/facebook_logo_icon.png" alt="Facebook"></a></li>
+                <li><a title="Ir a Twitter" target="_blank" href="https://www.twitter.com/"><img
+                      src="./assets/media/img/social/twitter_logo_icon.png" alt="Twitter"></a></li>
+                <li><a title="Ir a Instagram" target="_blank" href="https://www.instagram.com/"><img
+                      src="./assets/media/img/social/instagram_logo_icon.png" alt="Instagram"></a></li>
+                <li><a title="Ir a Tiktok" target="_blank" href="https://www.tiktok.com/"><img
+                      src="./assets/media/img/social/tiktok_logo_icon.png" alt="Tiktok"></a></li>
+              </ul>
+            </article>
+            <form id="formulario" action="" method="post">
+              <fieldset class="campos-datos">
+                <legend>Ingrese sus datos</legend>
+                <!-- Nombre -->
+                <div class="name field">
+                  <input id="name-input" type="text" name="name-input" minlength="2" title="Nombre" autocomplete="off"
+                    required onfocus="placeholder='Ingrese su nombre'" onblur="placeholder=''">
+                  </input>
+                  <label for="name-input" class="label-wrapper">
+                    <span class="label-text">
+                      Nombre<span>*</span>
+                    </span>
                   </label>
-                </fieldset>
-                <fieldset class="botones">
-                  <button type="submit" class="btn-enviar">Enviar</button>
-                  <button type="reset" class="btn-limpiar">Limpiar</button>
-                </fieldset>
-              </form>
-          </section>
-        </div>
+                </div>
+                <!-- Apellido -->
+                <div class="surname field">
+                  <input id="surname-input" type="text" name="surname-input" title="Apellido" minlength="2"
+                    autocomplete="off" required onfocus="placeholder='Ingrese su apellido'" onblur="placeholder=''">
+                  </input>
+                  <label for="surname-input" class="label-wrapper">
+                    <span class="label-text">
+                      Apellido<span>*</span>
+                    </span>
+                  </label>
+                </div>
+                <!-- País -->
+                <div class="country field">
+                  <input id="country-input" type="text" name="country-input" title="País" autocomplete="off" required
+                    onfocus="placeholder='País de origen'" onblur="placeholder=''">
+                  </input>
+                  <label for="country-input" class="label-wrapper">
+                    <span class="label-text">
+                      País<span>*</span>
+                    </span>
+                  </label>
+                </div>
+                <!-- Universidad -->
+                <div class="university field">
+                  <input id="university-input" type="text" name="university-input" title="Universidad"
+                    autocomplete="off" required onfocus="placeholder='Universidad a la que pertenece'"
+                    onblur="placeholder=''">
+                  </input>
+                  <label for="university-input" class="label-wrapper">
+                    <span class="label-text">
+                      Universidad<span>*</span>
+                    </span>
+                  </label>
+                </div>
+                <!-- Carrera -->
+                <div class="career field">
+                  <input id="career-input" type="text" name="career-input" title="Carrera" autocomplete="off" required
+                    onfocus="placeholder='Carrera que está cursando'" onblur="placeholder=''">
+                  </input>
+                  <label for="career-input" class="label-wrapper">
+                    <span class="label-text">
+                      Carrera<span>*</span>
+                    </span>
+                  </label>
+                </div>
+                <!-- Email -->
+                <div class="email field">
+                  <input id="email-input" type="email" name="email-input" title="Email" autocomplete="off" required
+                    onfocus="placeholder='Ingrese su email. Ej.: info@mail.com'" onblur="placeholder=''">
+                  </input>
+                  <label for="email-input" class="label-wrapper">
+                    <span class="label-text">
+                      Email<span>*</span>
+                    </span>
+                  </label>
+                </div>
+                <!-- Teléfono 
+                <div class="phone field">
+                  <input id="phone-input" type="tel" name="phone-input" title="Telefono" maxlength="12" autocomplete="off"
+                    onfocus="placeholder='Ingrese su número de teléfono. Ej.: 54 11 1234 5678'" onblur="placeholder=''" >
+                  </input>
+                  <label for="phone-input" class="label-wrapper">
+                    <span class="label-text">
+                      Telefono
+                    </span>
+                  </label>
+                </div> -->
+              </fieldset>
+              <fieldset class="botones">
+                <button type="submit" class="btn-enviar" title="Enviar formulario">Enviar</button>
+                <button type="reset" class="btn-limpiar" title="Limpiar campos">Limpiar</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
       </div>
       <span class="whatsapp-icon"><a href="https://web.whatsapp.com/" target="_blank"><img
             src="./assets/media/img/whatsapp-icon.png" alt="Ir a Whatsapp" /></a></span>

@@ -1,53 +1,98 @@
 @import url(./home.css);
+@import url(./input-anim.css);
 
-/* Contenido */
+/* Contenido de la página */
 
 main {
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: space-around;
 }
 
-.div-1 {
-    background-color: red;
-    width: 25%;
+.apartado {
+    width: 22.2vw;
+    /* background-color: red; */
 }
 
-.div-2 {
-    width: 75%;
+.contenido {
+    margin: 0;
+    width: auto;
+    display: flex;
+    width: 50%;
     /* background-color: green; */
 }
 
 /* Formulario */
 
 .contacto {
-    grid-column: span 2;
-    grid-row: auto;
-    margin: auto;
+    display: flex;
+    margin: 0;
     padding: 0;
-    width: 40vw;
     height: auto;
-    margin-bottom: 20px;
-    max-width: 800px;
+    /* margin-bottom: 20px;
+    max-width: 800px; */
+    /* border: 1px solid blueviolet; */
 }
 
-.contacto h2 {
-    margin: 2%;
+.info {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+.info h2 {
+    margin: 5% 0;
+}
+
+.info p {
+    margin-top: 2%;
+}
+
+.info > a {
+    margin: 10% 2%;
+    text-decoration: none;
+    color: #2d5eb8;
+}
+
+.info ul {
+    display: flex;
+    width: 50%;
+}
+
+.info ul li{
+    margin: 0 10px;
+}
+
+.info ul li:hover, .info ul li:focus {
+    opacity: calc(0.7);
+    transition: 150ms;
+}
+
+.info ul li:not(:hover), .info ul li:not(:focus) {
+    transition: 150ms;
+}
+
+form {
+    width: 50%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-datos {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* margin: 1%;
+    padding-left: 1.35%; */
 }
 
 legend {
     margin-bottom: 10px;
     font-weight: 600;
-}
-
-.campos-datos {
-    display: grid;
-    width: 45%;
-    margin: 1%;
-    grid-template-columns: 2;
-    grid-template-rows: 5;
-    padding-left: 1.35%;
 }
 
 label {
@@ -58,14 +103,27 @@ label {
 
 label span {
     color: red;
-    font-size: 18px;
+    font-size: 1em;
     margin: 2px;
+}
+
+/* input {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid #2d5eb8;
+}
+
+input:active {
+    border: transparent;
+    transform: border;
 }
 
 textarea {
     margin-top: 2%;
+    width: 100%;
+    height: fit-content;
     resize: none;
-}
+} */
 
 .botones {
     display: flex;
@@ -83,13 +141,13 @@ textarea {
     display: inline-block;
 }
 
-.btn-enviar:hover, .btn-limpiar:hover {
+.btn-enviar:hover, .btn-limpiar:hover, .btn-enviar:focus, .btn-limpiar:focus {
     opacity: calc(0.8);
     transition: 200ms;
     cursor: pointer;
 }
 
-.btn-enviar:not(:hover), .btn-limpiar:not(:hover) {
+.btn-enviar:not(:hover), .btn-limpiar:not(:hover), .btn-enviar:not(:focus), .btn-limpiar:not(:focus) {
     transition: 200ms;
 }
 
@@ -100,6 +158,7 @@ textarea {
 
 .btn-limpiar {
     background-color: lightgrey;
+    text-align: center;
 }
 
 footer {
