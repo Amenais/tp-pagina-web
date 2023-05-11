@@ -1,0 +1,152 @@
+@import url(./global.css);
+
+main .contenido {
+    height: fit-content;
+    background-color: transparent;
+  }
+  .apartado {
+    width: 25%;
+    height: inherit;
+    position: static;
+  }
+  
+  .apartado div {
+    background-color: aliceblue;
+    width: 22vw;
+    height: 85vh;
+    position: sticky;
+    top: 12.8vh;
+    left: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contenido {
+    /* border: 1px solid blueviolet; */
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); */
+  }
+  
+  .contenido {
+    margin: 0 0 40px 0;
+  }
+  
+  .contenido .seccion {
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    /* border: 1px solid deeppink; */
+    background-color: aliceblue;;
+    /* grid-column: span 1;
+    grid-row: span 1; */
+    /* grid-column: 1;
+    grid-row: 1; */
+    width: 95%;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  
+  /* .inicio, .nosotros, .servicios, .contacto {
+    grid-column: span 3;
+    grid-row: span 1;
+  } */
+  
+  .seccion, .seccion h2, .seccion p {
+    padding: 1%;
+    margin: 0;
+  }
+  
+  .seccion h2 {
+      
+      text-align: center ;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 32px;
+      
+  
+    
+
+  }
+  
+  
+  .seccion p {
+
+    
+    display: flex;
+    text-align: center;
+    font-weight: 300;
+  
+  }
+  .lista-servicios {
+   
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  
+  .contacto form {
+    margin: 10px;
+  }
+  
+  .whatsapp-icon {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  .whatsapp-icon img {
+    height: 64px;
+  }
+  .descrip img{
+    height: 200px;
+    border-radius: 5px;
+    float: left;
+    display: flex;
+  }
+  .descrip p{
+    font-display: flex;
+    text-align: left;
+  }
+  .seccion.servicios {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .lista-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item-servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    height: 100px;
+  }
+  
+  .avatar h3 {
+    margin-top: 10px;
+    text
+  
+  

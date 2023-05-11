@@ -1,0 +1,161 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;600;800&display=swap');
+
+/* Paleta de colores
+
+:root {
+  A definir
+} */
+
+/* Estructura global de estilos de pagina */
+
+/* Estructura de grilla de la pagina */
+
+*, h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'Figtree';
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10vh repeat(4, 1fr);
+  height: auto;
+}
+
+/* Logo, barra de navegacion, menu */
+
+div header {
+  background: #5949e6;
+  background-image: linear-gradient(
+    180deg,
+    rgba(52, 95, 113, 0.395) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background-blend-mode: lighten;
+  grid-column: span 4;
+  grid-row: span 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 10vh;
+  border-bottom: 3px solid rgba(241, 159, 255, 0.805);
+  border-radius: 0 0 2px 2px;
+  z-index: 5;
+}
+
+
+
+h1 {
+  display: flex;
+}
+
+h1 img {
+  margin: 10%;
+  height: auto;
+  display: block;
+}
+
+.navegador-inicio ul {
+  display: flex;
+  width: 90vw;
+  max-width: 70%;
+  margin: auto;
+  height: 100%;
+}
+
+.navegador-inicio ul li {
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navegador-inicio ul li:hover {
+  transform: scale(105%);
+  transition: 250ms;
+}
+
+.navegador-inicio ul li:not(:hover) {
+  transform: scale(1);
+  transition: 200ms;
+}
+
+.navegador-inicio a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.navegador-inicio a:hover {
+  color: aliceblue;
+}
+
+.navegador-inicio a:hover {
+  transition: 250ms;
+  text-shadow: 3px 1px 5px rgba(184, 184, 184, 0.838);
+  /* opacity: 0.7; */
+}
+
+.navegador-inicio a:not(:hover) {
+  transition: 200ms;
+  text-shadow: none;
+  opacity: 1;
+}
+
+/* Contenido principal */
+
+main {
+  /* border: 1px solid brown; */
+  grid-column: span 4;
+  grid-row: span 4;
+  display: flex;
+  background: rgb(110, 56, 224);
+  background: linear-gradient(
+    0deg,)
+}
+
+/* Pie de pagina */
+
+footer {
+  color: aliceblue;
+  /* border: 1px solid blue; */
+  background-color: #160a30;
+  /* background-image: linear-gradient(to bottom, #bdbbbe 0%, #9d9ea3 100%),
+    radial-gradient(
+      88% 271%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(254, 254, 254, 0.25) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      50% 100%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ); */
+  background-blend-mode: normal, lighten, soft-light;
+  grid-column: span 4;
+  grid-row: span 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista-general-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.lista-general-footer a {
+  text-decoration: none;
+  color: unset;
+}
+
+.lista-general-footer ul {
+  border: 1px solid deepskyblue;
+}
+
+.lista-individual-footer {
+  padding: 10px;
+}
