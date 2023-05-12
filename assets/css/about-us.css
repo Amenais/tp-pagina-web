@@ -71,9 +71,6 @@ main .contenido {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 32px;
-      
-
-
   }
   
   
@@ -130,9 +127,6 @@ video {
     text-align: left;
   }
 
-  
-  
-  
   .lista-servicios {
     display: flex;
     flex-wrap: wrap;
