@@ -195,17 +195,19 @@
                   </label>
                 </div>
                 <!-- Universidad -->
+
                 <div class="university field">
-                  <input id="university-input" type="text" name="university-input" title="Universidad"
-                    autocomplete="off" required onfocus="placeholder='Universidad a la que pertenece'"
-                    onblur="placeholder=''">
+                  <input id="university-input" type="text" name="university-input" title="Universidad" autocomplete="off" required
+                    onfocus="placeholder='Universidad a la que asiste'" onblur="placeholder=''" list="suggestions">
                   </input>
                   <label for="university-input" class="label-wrapper">
                     <span class="label-text">
                       Universidad<span>*</span>
                     </span>
                   </label>
+                  <datalist id="suggestions"></datalist>
                 </div>
+
                 <!-- Carrera -->
                 <div class="career field">
                   <input id="career-input" type="text" name="career-input" title="Carrera" autocomplete="off" required
@@ -278,6 +280,7 @@
       <span>© Copyright 2023</span>
     </footer>
   </div>
+  <script src="./assets/js/contacto.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
   position: relative;
   height: 52px;
   width: max(100%, 150px);
-  color: rgb(0, 0, 0);
+  color: black;
   overflow: hidden;
   display: flex;
 }
@@ -28,7 +28,10 @@
   background-color: inherit;
   left: 0;
   pointer-events: none;
-  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.field .label-wrapper:not(:active) {
+  border-bottom: 1px solid;
 }
 
 .field .label-wrapper::after {
@@ -44,7 +47,7 @@
 }
 
 .field .label-text {
-  color: #000000;
+  color: black;
   position: absolute;
   bottom: 5px;
   left: 0;
