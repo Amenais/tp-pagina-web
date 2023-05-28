@@ -1,31 +1,34 @@
 @import url(./global.css);
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;600;800&display=swap");
 
-.all-serv-container {
+
+.all-serv-container{
   /*display: grid;*/
   display: flex;
   /*grid-template-columns: repeat(2, 1fr);*/
   gap: 20px;
   background-color: aliceblue;
   width: 95%;
-  margin: 10px;
+  margin: 40px;
   border-radius: 20px;
   grid-column: span 3;
   grid-row: span 1;
   font-weight: 300;
+  
 }
-
 .services-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+ 
+  
 }
 
 .slider-container {
   flex-basis: 50%;
   margin-right: 5%;
   padding-bottom: 5%;
-  /* width: 50%;
+ /* width: 50%;
   grid-column: 2 / 1;
   grid-row: 1 / 2;*/
 }
@@ -37,17 +40,37 @@
   /*width: 50%;
   grid-column: 1 / 2;
   grid-row: 1/-1;*/
+  
+}
+.icon-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-.slider {
-  width: 512px;
-  height: 512px;
-  margin: 50px 0 auto;
-  overflow: hidden;
+.icon-list li {
   position: relative;
-  display: flex;
+  padding-left: 25px;
+  margin-bottom: 10px;
 }
 
+.icon-list li .icon img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px; 
+  height: 20px;
+}
+
+.slider{
+width: 512px;
+height: 512px;
+margin: 50px 0 auto;
+overflow: hidden;
+position: relative;
+display: flex;
+
+
+}
 .slider-inner {
   width: 5000px; /* combined width of all the images */
   position: absolute;
@@ -55,15 +78,13 @@
   top: 0;
   animation: slide 50s infinite;
 }
-
 .slider-inner img {
   width: 512px;
   height: 512px;
   float: left;
 }
-
 @keyframes slide {
-  /* 0% {
+ /* 0% {
     left: 0;
   }*/
   20% {
@@ -90,4 +111,5 @@
   100% {
     left: -0px;
   }
+  
 }
