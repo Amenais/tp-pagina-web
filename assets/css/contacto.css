@@ -1,6 +1,6 @@
 @import url(./home.css);
 @import url(./input-anim.css);
-
+@import url(./BreakPoints.css);
 /* Contenido de la página */
 
 main {
@@ -172,4 +172,7 @@ textarea {
 
 footer {
   grid-area: auto, auto;
+}
+.abrir-menu {
+  display: none;
 }
