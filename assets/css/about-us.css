@@ -8,12 +8,21 @@ main .contenido {
     height: fit-content;
     background-color: transparent;
   }
+  
   .apartado {
     width: 25%;
     height: inherit;
     position: static;
   }
-  
+  .Tittle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6200ff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #6200ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
   .apartado div {
     background-color: aliceblue;
     width: 22vw;
@@ -27,7 +36,7 @@ main .contenido {
   
   .contenido {
     /* border: 1px solid blueviolet; */
-    width: 75%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -35,7 +44,13 @@ main .contenido {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr); */
   }
-  
+  h2.Logo {
+    font-size: 20px; 
+    font-weight: bold;
+    display: block; 
+    color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
   .contenido {
     margin: 0 0 40px 0;
   }
