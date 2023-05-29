@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/css/home.css" />
   <link rel="stylesheet" href="assets/css/estilos.css" />
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="./assets/css/BreakPoints.css">
 </head>
 
 <body>
@@ -21,13 +22,14 @@
         </a>
       </div>
       <nav class="navegador-inicio">
-        <ul>
+        <ul class="nav-list">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="about-us.html">Sobre Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <button class="abrir-menu"><a href="javascript:void(0);" onclick="responsiveMenu()">&#9776;</a></button>
       <span class="seleccion-idioma">
         <img src="./assets/media/img/lang/flag-spain-icon.png" alt="">
         <select name="lang-sel" id="idioma">
@@ -224,5 +226,6 @@
     </footer>
   </div>
 </body>
+<script src="./assets/js/drop-down-menu.js"></script>
 
 </html>
