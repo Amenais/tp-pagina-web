@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;600;800&display=swap");
 @import url(./BreakPoints.css);
+
 /* Paleta de colores
 
 :root {
@@ -173,14 +174,22 @@ main {
   /* border: 1px solid brown; */
   grid-column: span 4;
   grid-row: span 4;
+  padding-bottom: 20px;
   display: flex;
   background: linear-gradient(
     0deg,
-    rgb(10, 11, 48) 5%,
-    rgba(98, 105, 247, 0.818) 45%,
-    rgba(158, 169, 237, 0.696) 75%,
-    rgba(178, 218, 247, 0.485) 95%
-  );
+    #0a141d,
+    #253e72
+    );
+  /* background: linear-gradient(
+    0deg,
+    #160a30e1 2%,
+    #4461759d 20%,
+    #62cdcda5 35%,
+    #79f3f3ac 50%,
+    #84ffff7e 90%,
+    rgba(182, 222, 251, 0.485) 98%
+  ); */
   /* background-image: url('../media/img/background.jpeg');
   background-size: cover;
   background-attachment: local; */
@@ -188,10 +197,15 @@ main {
 
 /* Pie de pagina */
 
-footer {
+/* footer {
   color: aliceblue;
-  /* border: 1px solid blue; */
-  background-color: #160a30;
+  /* border: 1px solid blue;
+  background: linear-gradient(
+    0deg,
+    #160a30 0%,
+    #160a30f1 70%,
+    #160a30e1 100%
+    );
   /* background-image: linear-gradient(to bottom, #bdbbbe 0%, #9d9ea3 100%),
     radial-gradient(
       88% 271%,
@@ -203,13 +217,13 @@ footer {
       50% 100%,
       rgba(255, 255, 255, 0.3) 0%,
       rgba(0, 0, 0, 0.3) 100%
-    ); */
+    ); 
   background-blend-mode: normal, lighten, soft-light;
   grid-column: span 4;
   grid-row: span 1;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .lista-general-footer {
   display: flex;
@@ -231,6 +245,7 @@ footer {
 .lista-individual-footer {
   padding: 10px;
 }
+
 .abrir-menu {
   display: none;
 }

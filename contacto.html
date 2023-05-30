@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Residencias Atlántico</title>
   <link rel="stylesheet" href="./assets/css/contacto.css" />
+  <link rel="stylesheet" href="./assets/css/BreakPoints.css">
+  <link rel="stylesheet" href="./assets/css/drop-down-menu.css">
+  <link rel="stylesheet" href="./assets/css/dark-mode-css">
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
@@ -21,132 +28,36 @@
       <nav class="navegador-inicio">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="#nosotros">Sobre Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="about-us.html">Sobre Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <span class="seleccion-idioma">
+      <button class="abrir-menu"><a href="javascript:void(0);" onclick="responsiveMenu()">&#9776;</a></button>
+      <!-- <span class="seleccion-idioma">
         <img src="./assets/media/img/lang/flag-spain-icon.png" alt="">
         <select name="lang-sel" id="idioma">
           <option value="lang-es">Español</option>
-          <!-- <option value="lang-en">English</option> -->
+          <option value="lang-en">English</option>
         </select>
-      </span>
+      </span> -->
     </header>
     <main>
-      <aside class="apartado">
-        <div class="apartado-cabecera">
-          <h2>Testimonios</h2>
-          <p>Valoración: ⭐ 4.11 (9)</p>
-        </div>
-        <div class='wrapper'>
-          <div class='carousel'>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/burbuja.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>Burbujita</p>
-                <p>Excelente ⭐ 5</p>
-                <p class="comments">"Hola?
-                  Adios!"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/pedro.jpg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>Pedro Espinedo</p>
-                <p>Excelente ⭐ 5</p>
-                <p class="comments">"Excelente ambiente! Con sala de coworking y desayuno incluido. Super
-                  recomendado!!!" </p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/juana.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>juana La Cubana</p>
-                <p>Excelente ⭐ 5</p>
-                <p class="comments">"A la grande le puse cuca"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/messi.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>Messias</p>
-                <p>Bien ⭐ 3</p>
-                <p class="comments">"Muchaaaaaachoos!!!"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/muchi.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>Canelon</p>
-                <p>Regular ⭐ 2</p>
-                <p class="comments">"Me sirvieron el cafe tibio"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/noodle.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>I ♥ Gorillaz</p>
-                <p>Muy Bien ⭐ 4</p>
-                <p class="comments">"Lugar muy lindo! Pero la señal wifi no llegaba a mi habitación. Ojalá lo
-                  solucionen"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/peluca.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>El Peluca Milei</p>
-                <p>Excelente ⭐ 5</p>
-                <p class="comments">"VIVA LA LIBERTAD, CARAJO!"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/thanos.jpeg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>I'm Inevi Table</p>
-                <p>Bien ⭐ 3</p>
-                <p class="comments">"Tiene aire acondicionado y calefacción. Perfectamente equilibrado"</p>
-              </div>
-            </div>
-            <div class='carousel__item'>
-              <div class='carousel__item-head'>
-                <img src="assets/media/img/users/picachu.jpg" alt="user image">
-              </div>
-              <div class='carousel__item-body'>
-                <p class='title'>Poke Moon</p>
-                <p>Excelente ⭐ 5</p>
-                <p class="comments">"Ya habilitaron la pileta climatizada. Muy bien!!!"</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-      <div class="contenido">
+      <div class="contenido contact-container">
         <section class="seccion">
           <div class="contacto">
             <article class="info">
               <h2>Contáctenos</h2>
-              <p>"Datos dirección" Ej.: Calle Falsa 123, Springfield</p>
-              <p>"Datos horarios" Ej.: Lunes a Viernes de 8 a 18 hs</p>
-              <p>"Datos horarios" Ej.: Sábados de 10 a 14 hs</p>
-              <a href="">infocontacto@ejemplo.com</a>
+              <p>
+                <hr>Dirección:
+              </p>
+              <p>Pellegrini 423, Comodoro Rivadavia, Chubut</p>
+              <p>
+                <hr>Atención:
+              </p>
+              <p>Lunes a Viernes de 8 a 18 hs</p>
+              <p>Sábados de 10 a 14 hs</p>
+              <a href="">contacto@residenciasatlantico.com</a>
               <ul>
                 <li><a title="Ir a Facebook" target="_blank" href="https://www.facebook.com/"><img
                       src="./assets/media/img/social/facebook_logo_icon.png" alt="Facebook"></a></li>
@@ -158,7 +69,7 @@
                       src="./assets/media/img/social/tiktok_logo_icon.png" alt="Tiktok"></a></li>
               </ul>
             </article>
-            <form id="formulario" action="" method="post">
+            <form id="formulario" action="mailto:direccion@dominio.com" method="post" enctype="text/plain">
               <fieldset class="campos-datos">
                 <legend>Ingrese sus datos</legend>
                 <!-- Nombre -->
@@ -197,8 +108,9 @@
                 <!-- Universidad -->
 
                 <div class="university field">
-                  <input id="university-input" type="text" name="university-input" title="Universidad" autocomplete="off" required
-                    onfocus="placeholder='Universidad a la que asiste'" onblur="placeholder=''" list="suggestions">
+                  <input id="university-input" type="text" name="university-input" title="Universidad"
+                    autocomplete="off" required onfocus="placeholder='Universidad a la que asiste'"
+                    onblur="placeholder=''" list="suggestions">
                   </input>
                   <label for="university-input" class="label-wrapper">
                     <span class="label-text">
@@ -254,33 +166,47 @@
             src="./assets/media/img/whatsapp-icon.png" alt="Ir a Whatsapp" /></a></span>
     </main>
     <footer>
-      <ul class="lista-general-footer">
-        <ul class="lista-individual-footer">
-          <h4>Puedes encontrarnos en</h4>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">TikTok</a></li>
-        </ul>
-        <ul class="lista-individual-footer">
-          <h4>Acerca de este sitio</h4>
-          <p>
-            Este sitio fue creado por el grupo de trabajo n°4 como proyecto
-            final de Codo a Codo 4.0 - Full Stack Python
-          </p>
-        </ul>
-        <ul class="lista-individual-footer">
-          <h3>Conoce a sus creadores</h3>
-          <li>Karen V</li>
-          <li>Andrés Ramírez</li>
-          <li>Ingrid Pensado</li>
-          <li>Giuliano Cutuli</li>
-        </ul>
-      </ul>
-      <span>© Copyright 2023</span>
+      <div class="footer-content">
+        <div class="columna-redes">
+          <h3>PUEDES ENCONTRARNOS EN</h3>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="columna-conoce-programadores">
+          <h3>CONOCE A SUS CREADORES</h3>
+          <a href="https://github.com/velkar1">
+            <img src="assets/media/img/creators/karen.enc" alt="GitHub_Karen">
+          </a>
+          <a href="https://github.com/Amenais">
+            <img src="assets/media/img/creators/giuliano.enc" alt="GitHub_Giuliano">
+          </a>
+          <a href="https://github.com/Ingrid218">
+            <img src="assets/media/img/creators/ingrid.enc" alt="GitHub_Ingrid">
+          </a>
+          <a href="https://github.com/AndresRamirez357">
+            <img src="assets/media/img/creators/andres.jpeg" alt="GitHub_Andres">
+          </a>
+        </div>
+        <div class="columna-sobre-nosotros">
+          <h3>ACERCA DE ESTE SITIO</h3>
+          <p>Este sitio fue creado en base al Trabajo Práctico n°1 (Front End) por el grupo n°4 del curso "Codo a Codo
+            4.0 - Full Stack
+            Python"</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="copy">Copyright @ 2023 - Todos los derechos reservados</span>
+      </div>
     </footer>
   </div>
-  <script src="./assets/js/contacto.js"></script>
 </body>
+<script src="./assets/js/contacto.js"></script>
+<script src="./assets/js/drop-down-menu.js"></script>
+<script src="./assets/js/dark-mode.js"></script>
 
 </html>

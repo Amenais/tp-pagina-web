@@ -13,10 +13,10 @@
 .wrapper {
   border-radius: 20px;
   background: linear-gradient(60deg, #420285, #08bdbd);
-  height: 100%;
+  height: 107vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .carousel {
@@ -26,6 +26,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+  margin: auto;
 }
 
 .carousel__item {

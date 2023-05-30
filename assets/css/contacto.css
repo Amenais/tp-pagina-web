@@ -15,11 +15,21 @@ main {
 }
 
 .contenido {
-  margin: 0;
-  width: auto;
+  margin: 20px auto;
+  width: 50%;
   display: flex;
   width: 50%;
   /* background-color: green; */
+}
+
+/* Apartado */
+
+.wrapper {
+  height: 100%;
+}
+
+.testimonios-title {
+  border-radius: 20px 20px 0 0;
 }
 
 /* Formulario */
@@ -130,7 +140,7 @@ textarea {
 .botones {
   display: flex;
   justify-content: space-around;
-  margin: 2% 0;
+  margin: 20px 0;
 }
 
 .btn-enviar,

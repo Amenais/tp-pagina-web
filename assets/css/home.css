@@ -1,10 +1,6 @@
 @import url(./global.css);
 @import url(./carousel.css);
-
-main .contenido {
-  height: fit-content;
-  background-color: transparent;
-}
+@import url(footer.css);
 
 .apartado {
   /* border: 1px solid aquamarine; */
@@ -12,14 +8,16 @@ main .contenido {
   margin: 20px;
   width: 22vw;
   height: inherit;
-  position: sticky;
+  position: inherit;
   top: 91px;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   height: 60vh;
 }
 
-.apartado-cabecera {
+/* .apartado-cabecera {
+  grid-row: span 1;
+  grid-column: span 2;
   background-color: white;
   position: absolute;
   height: auto;
@@ -40,6 +38,50 @@ main .contenido {
 .apartado-cabecera h2, .apartado-cabecera p {
   margin: auto;
   align-items: center;
+} */
+
+.maps-title, .testimonios-title {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  /* border: 1px solid red; */
+  font-size: x-large;
+  font-weight: 600;
+  padding-bottom: 8px;
+  align-items: center;
+  background-color: aliceblue;
+  text-align: center;
+  z-index: 3;
+}
+
+.maps-title {
+  border-radius: 20px 20px 0 0;
+}
+
+.maps {
+  width: 100%;
+  height: 50vh;
+  /* border: 1px solid red; */
+  display: flex;
+  z-index: 3;
+}
+
+.maps iframe {
+  margin: 20px auto;
+  width: 90%;
+  height: auto;
+}
+
+.testimonios-title p {
+  /* border: 1px solid red; */
+  font-size: medium;
+  margin: 5px 0;
+}
+
+.testimonios {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  height: 50vh;
 }
 
 /* .apartado div {
@@ -53,9 +95,14 @@ main .contenido {
   margin-bottom: 20px;
 } */
 
+main .contenido {
+  height: fit-content;
+  background-color: transparent;
+}
+
 .contenido {
   /* border: 1px solid blueviolet; */
-  width: 75%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -65,7 +112,7 @@ main .contenido {
 }
 
 .contenido {
-  margin: 0 0 40px 0;
+  margin: auto;
 }
 
 .contenido .seccion {
