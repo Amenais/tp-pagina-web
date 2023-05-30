@@ -1,4 +1,4 @@
-fetch('../assets/json/universities.json')
+fetch('../assets/js/json/universities.json')
   .then(response => response.json())
   .then(data => {
     // console.log(data); // Depuración: muestra los datos del archivo JSON en la consola

@@ -1,4 +1,8 @@
 {
+    "other":{
+        "name": "Other",
+        "country": "Other"
+    },
     "university1":{
         "name": "Aalto University School of Business",
         "country": "Helsinki, Finlandia"
@@ -38,9 +42,5 @@
     "university10":{
         "name": "CENTRUM Business School, Pontificia Universidad Católica de Perú",
         "country": "Lima, Perú"
-    },
-    "other":{
-        "name": "Other",
-        "country": "Other"
     }
 }
