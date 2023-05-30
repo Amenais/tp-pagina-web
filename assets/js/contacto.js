@@ -1,4 +1,4 @@
-fetch('../assets/js/json/universities.json')
+fetch('https://raw.githubusercontent.com/Amenais/tp-pagina-web/main/assets/json/universities.json')
   .then(response => response.json())
   .then(data => {
     // console.log(data); // Depuración: muestra los datos del archivo JSON en la consola
