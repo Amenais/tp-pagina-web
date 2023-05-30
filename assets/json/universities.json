@@ -38,5 +38,9 @@
     "university10":{
         "name": "CENTRUM Business School, Pontificia Universidad Católica de Perú",
         "country": "Lima, Perú"
+    },
+    "other":{
+        "name": "Other",
+        "country": "Other"
     }
 }
